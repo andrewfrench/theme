@@ -7,7 +7,13 @@ function sizeBoxes() {
   var realWidth = document.body.clientWidth - 8;
   var boxes = document.getElementsByClassName('box');
 
-  document.getElementById('container').style.width = realWidth + "px";
+  // Set container width, max 1200px
+  if(realWidth < 1200) {
+    document.getElementById('inner-container').style.width = realWidth + "px";
+  } else {
+    realWidth = 1200;
+    document.getElementById('inner-container').style.width = realWidth + "px";
+  }
 
   for(var i = 0; i < boxes.length; i++) {
 

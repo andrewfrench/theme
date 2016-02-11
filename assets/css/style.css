@@ -64,6 +64,8 @@ html, body {
   background-size: cover;
   background-position: top center;
   margin-bottom: 4px;
+  position: fixed;
+  z-index: -4;
 }
 
 #tagline {
@@ -81,7 +83,7 @@ html, body {
   font-size: 20px;
   margin: 40px 5px 46px 5px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .divider:after  {
@@ -102,8 +104,17 @@ span.divtext {
   padding: 0 20px 0 20px;
 }
 
-#container {
+#outer-container {
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+#inner-container {
   margin: auto;
+  margin-top: 300px;
+  padding-top: 4px;
+  background-color: #fff;
 }
 
 #post-container {
@@ -130,7 +141,6 @@ span.divtext {
 
 #right-container {
   width: 50%;
-  height: 50vw;
   margin: 0;
   display: inline-block;
 }
@@ -165,6 +175,7 @@ a .title {
 
 .title {
   background-color: rgba(0,0,0,0.6);
+  overflow: hidden;
   position: relative;
   padding: 8px 10px 8px 10px;
   font-size: 20px;
