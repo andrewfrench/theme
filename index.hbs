@@ -1,0 +1,17 @@
+{{!< default}}
+
+<div id="splash" style="background-image: url({{@blog.cover}})"></div>
+<div id="container">
+  <!-- <div id="tagline">{{ @blog.description }}</div> -->
+  <div id="tinytext">
+    {{> "multibox" }}
+    <div class="divider">
+      <span class="divtext">COLLECTIONS</span>
+    </div>
+    {{> "collections" }}
+    <div class="divider">
+      <span class="divtext">RECENTLY ADDED</span>
+    </div>
+    {{> "recents" }}
+  </div>
+</div>

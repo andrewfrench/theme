@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/opensans/stylesheet.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+    {{navigation}}
+    {{! Everything else gets inserted here }}
+    <div id="padding"></div>
+    {{{body}}}
+    <div class="clear"></div>
+    <div id="footer">
+    </div>
+    {{ghost_foot}}
+    {{! Javascript files go below here }}
+    <script src="{{asset "js/multigray.js"}}"></script>
+    <script src="{{asset "js/sizer.js"}}"></script>
+</body>
+</html>
