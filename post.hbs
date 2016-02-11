@@ -4,25 +4,27 @@
 {{#if image}}
   <div id="splash" style="background-image: url({{ image }});"></div>
 {{/if}}
-<div id="container">
-  <div id="post-container">
-    <h1>{{ title }}</h1>
+<div id="outer-container">
+  <div id="inner-container">
+    <div id="post-container">
+      <h1>{{ title }}</h1>
 
-    {{ content }}
+      {{ content }}
 
-    {{#author}}
-    <div class="author">
-      <div class="author-image" style="background-image: url({{ image }});"></div>
-      <div class="author-info">
-        <div class="author-name">
-          <a href="{{ website }}">{{ name }}</a>
+      {{#author}}
+      <div class="author">
+        <div class="author-image" style="background-image: url({{ image }});"></div>
+        <div class="author-info">
+          <div class="author-name">
+            <a href="{{ website }}">{{ name }}</a>
+          </div>
+          <div class="author-bio">{{ bio }}</div>
+          <div class="author-more-by"><a href="{{ url }}">More from this author</a></div>
         </div>
-        <div class="author-bio">{{ bio }}</div>
-        <div class="author-more-by"><a href="{{ url }}">More from this author</a></div>
       </div>
+        <div class="clear"></div>
+      {{/author}}
     </div>
-      <div class="clear"></div>
-    {{/author}}
   </div>
 </div>
 
