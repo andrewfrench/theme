@@ -20,26 +20,28 @@ html, body {
 }
 
 #footer {
-  margin-top: 5px;
   background-color: #222;
   height: 300px;
   width: 100%;
 }
 
 #navigation-container {
-  /*display: inline-block;*/
-  position: relative;
-  bottom: 46px;
-  /*left: 50%;*/
-  margin: auto;
+  max-width: 1200px;
+  margin:auto;
+}
+
+#button-container {
+  float: right;
+  margin: 26px 4px 0 0;
+  display: inline-block;
   text-align: right;
 }
 
 .nav-item {
   font-size: 26px;
   display: inline-block;
-  margin: 0 5px 6px 5px;
-  padding: 0 14px 0 14px;
+  margin: 0 0 6px 5px;
+  padding: 0 0 0 14px;
   text-transform: uppercase;
 }
 
@@ -48,9 +50,11 @@ html, body {
 }
 
 #logo {
-  font-size: 66px;
+  font-size: 60px;
+  margin-top: 6px;
   display: inline-block;
   font-weight: 200;
+  padding-left: 4px;
 }
 
 #padding {
@@ -99,7 +103,7 @@ html, body {
 }
 
 span.divtext {
-  background: #fff;
+  background: #eee;
   margin: 0;
   padding: 0 20px 0 20px;
 }
@@ -107,14 +111,14 @@ span.divtext {
 #outer-container {
   width: 100%;
   margin: 0;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 #inner-container {
   margin: auto;
   margin-top: 300px;
-  padding-top: 4px;
-  background-color: #fff;
+  padding: 4px 0px 4px 0px;
+  background-color: #eee;
 }
 
 #post-container {
@@ -224,7 +228,6 @@ a .title {
 }
 
 .author-image {
-  /*display: inline-block;*/
   float: left;
   position: relative;
   width: 100px;

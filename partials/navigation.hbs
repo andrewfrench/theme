@@ -1,12 +1,14 @@
 <div id="header">
-  <div id="logo">
-    <a href="{{@blog.url}}">{{@blog.title}}</a>
-  </div>
   <div id="navigation-container">
-    {{#foreach navigation}}
-      <div class="nav-item">
-        <a href="{{ url }}">{{ label }}</a>
-      </div>
-    {{/foreach}}
+    <div id="logo">
+      <a href="{{@blog.url}}">{{@blog.title}}</a>
+    </div>
+    <div id="button-container">
+      {{#foreach navigation}}
+        <div class="nav-item">
+          <a href="{{ url }}">{{ label }}</a>
+        </div>
+      {{/foreach}}
+    </div>
   </div>
 </div>
