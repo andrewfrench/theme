@@ -1,9 +1,12 @@
 {{!< default }}
 
-{{#post}}
-{{#if image}}
-  <div id="splash" style="background-image: url({{ image }});"></div>
+{{#if post.image}}
+  <div id="splash" style="background-image: url({{ post.image }});"></div>
+{{else}}
+  <div id="splash" style="background-image: url({{ @blog.cover }});"></div>
 {{/if}}
+
+{{#post}}
 <div id="outer-container">
   <div id="inner-container">
     <div id="post-container">
@@ -27,5 +30,4 @@
     </div>
   </div>
 </div>
-
 {{/post}}
