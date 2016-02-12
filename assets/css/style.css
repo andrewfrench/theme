@@ -1,6 +1,6 @@
 html, body {
   margin: 0;
-  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-family: Work Sans, Helvetica, Arial, sans-serif;
 }
 
 #header {
@@ -12,6 +12,7 @@ html, body {
   margin-bottom: 4px;
   color: white;
   z-index: 999;
+  font-weight: 200;
 }
 
 #header a {
