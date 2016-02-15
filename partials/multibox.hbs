@@ -1,4 +1,4 @@
-{{#get "posts" filter="featured:true" limit="1" as |featured|}}
+{{#get "posts" filter="featured:true" limit="1" order="published_at desc" as |featured|}}
   {{#if featued}}
     <a href="{{ featured.url }}">
       <div class="big box">
@@ -15,7 +15,7 @@
     </a>
   {{/if}}
 {{/get}}
-{{#get "posts" filter="featured:false" limit="3" as |unfeatured|}}
+{{#get "posts" filter="featured:false" limit="3" order="published_at desc" as |unfeatured|}}
   <div id="right-container">
     <a href="{{ unfeatured.0.url }}">
       <div class="little box">
