@@ -7,18 +7,7 @@
 {{/if}}
 <div id="outer-container">
   <div id="inner-container">
-    <!-- <div id="tagline">{{ @blog.description }}</div> -->
     <div id="tinytext">
-      {{#unless tag}}
-        {{> "multibox" }}
-        <div class="divider">
-          <span class="divtext">COLLECTIONS</span>
-        </div>
-        {{> "collections" }}
-        <div class="divider">
-          <span class="divtext">RECENTLY ADDED</span>
-        </div>
-      {{/unless}}
       {{> "recents" }}
     </div>
   </div>

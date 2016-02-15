@@ -1,26 +1,39 @@
-<a href="{{ posts.0.url }}">
-  <div class="big box">
-    <div class="image cover" style="background-image: url({{ posts.0.image }});"></div>
-    <div class="title">{{{ posts.0.title }}}</div>
+{{#get "posts" filter="featured:true" limit="1" as |featured|}}
+  {{#if featued}}
+    <a href="{{ featured.url }}">
+      <div class="big box">
+        <div class="image cover" style="background-image: url({{ featured.image }});"></div>
+        <div class="title">{{{ featured.title }}}</div>
+      </div>
+    </a>
+  {{else}}
+    <a href="{{ posts.0.url }}">
+      <div class="big box">
+        <div class="image cover" style="background-image: url({{ posts.0.image }});"></div>
+        <div class="title">{{{ posts.0.title }}}</div>
+      </div>
+    </a>
+  {{/if}}
+{{/get}}
+{{#get "posts" filter="featured:false" limit="3" as |unfeatured|}}
+  <div id="right-container">
+    <a href="{{ unfeatured.0.url }}">
+      <div class="little box">
+        <div class="image cover" style="background-image: url({{ unfeatured.1.image }});"></div>
+        <div class="title">{{{ unfeatured.1.title }}}</div>
+      </div>
+    </a>
+    <a href="{{ unfeatured.1.url }}">
+      <div class="little box">
+        <div class="image cover" style="background-image: url({{ unfeatured.2.image }});"></div>
+        <div class="title">{{{ unfeatured.2.title }}}</div>
+      </div>
+    </a>
+    <a href="{{ unfeatured.2.url }}">
+      <div class="medium box">
+        <div class="image cover" style="background-image: url({{ unfeatured.3.image }});"></div>
+        <div class="title">{{{ unfeatured.3.title }}}</div>
+      </div>
+    </a>
   </div>
-</a>
-<div id="right-container">
-  <a href="{{ posts.1.url }}">
-    <div class="little box">
-      <div class="image cover" style="background-image: url({{ posts.1.image }});"></div>
-      <div class="title">{{{ posts.1.title }}}</div>
-    </div>
-  </a>
-  <a href="{{ posts.2.url }}">
-    <div class="little box">
-      <div class="image cover" style="background-image: url({{ posts.2.image }});"></div>
-      <div class="title">{{{ posts.2.title }}}</div>
-    </div>
-  </a>
-  <a href="{{ posts.3.url }}">
-    <div class="medium box">
-      <div class="image cover" style="background-image: url({{ posts.3.image }});"></div>
-      <div class="title">{{{ posts.3.title }}}</div>
-    </div>
-  </a>
-</div>
+{{/get}}
