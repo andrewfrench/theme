@@ -32,6 +32,7 @@ html, body {
   border: solid white 2px;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
+  text-transform: uppercase;
 }
 
 #footer {
@@ -164,7 +165,7 @@ span.divtext {
   display: inline-block;
 }
 
-a .title {
+a .multibox-title {
   text-decoration: none !important;
 }
 
@@ -176,15 +177,7 @@ a .title {
 .box {
   margin: 4px;
   float: left;
-}
-
-.big {
-}
-
-.medium {
-}
-
-.little {
+  overflow: hidden;
 }
 
 .image {
