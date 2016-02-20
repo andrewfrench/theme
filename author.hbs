@@ -1,13 +1,11 @@
 {{!< default}}
 
-{{#author}}
 <div id="splash" style="background-image: url({{@blog.cover}})"></div>
 <div id="outer-container">
   <div id="inner-container">
-    <h2>More by contributor {{ name }}</h2>
+    <h1>More by contributor {{ author.name }}</h1>
     <div id="tinytext">
       {{> "recents" }}
     </div>
   </div>
 </div>
-{{/author}}
