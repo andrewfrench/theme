@@ -1,6 +1,7 @@
 (function() {
   sizeBoxes();
   placeTitles();
+  placeSplashOverlay();
 })();
 
 function sizeBoxes() {
@@ -42,7 +43,18 @@ function placeTitles() {
   }
 }
 
+function placeSplashOverlay() {
+  var tagOverlay = document.getElementById("splash-overlay");
+
+  var overlayWidth = tagOverlay.offsetWidth;
+
+  var left = (document.body.clientWidth - overlayWidth) / 2;
+
+  tagOverlay.style.left = left + "px";
+}
+
 window.onresize = function(event) {
   sizeBoxes();
   placeTitles();
+  placeSplashOverlay();
 }
