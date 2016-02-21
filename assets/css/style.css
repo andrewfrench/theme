@@ -35,12 +35,6 @@ html, body {
   text-transform: uppercase;
 }
 
-#footer {
-  background-color: #222;
-  height: 300px;
-  width: 100%;
-}
-
 #navigation-container {
   max-width: 1200px;
   margin:auto;
@@ -58,7 +52,7 @@ html, body {
   display: inline-block;
   margin: 0 0 6px 5px;
   padding: 0 0 0 14px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .nav-item:hover {
@@ -261,4 +255,20 @@ a .multibox-title {
 .author-more-by {
   font-size: 14px;
   color: #777;
+}
+
+div#footer {
+  text-align: center;
+  font-size: 30px;
+  color: #eee;
+  font-family: Work Sans;
+  font-weight: 200;
+  padding: 100px 0 100px 0;
+  background-color: #222;
+  width: 100%;
+}
+
+div#footer a {
+  color: #eee;
+  text-decoration: none;
 }
