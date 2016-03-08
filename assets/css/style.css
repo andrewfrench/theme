@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  font-family: Georgia, serif;
 }
 
 #header {
@@ -132,9 +133,8 @@ span.divtext {
 }
 
 #post-container {
-  max-width: 800px;
-  /*margin: auto;*/
-  /*margin-right: 400px;*/
+  max-width: 600px;
+  line-height: 180%;
 }
 
 #tinytext {
@@ -271,4 +271,9 @@ div#footer {
 div#footer a {
   color: #eee;
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: Work Sans;*/
+  font-weight: normal;
 }
