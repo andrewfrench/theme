@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
-  /*font-family: Helvetica, Arial, sans-serif;*/
-  font-family: Georgia, serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #header {
@@ -135,10 +134,11 @@ span.divtext {
 #post-container {
   max-width: 600px;
   line-height: 180%;
+  font-family: Georgia, serif;
 }
 
 #post-container img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 #tinytext {
