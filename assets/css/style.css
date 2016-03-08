@@ -240,12 +240,13 @@ a .multibox-title {
   height: 100px;
   background-size: cover;
   background-position: center;
+  margin-right: 20px;
 }
 
 .author-info {
   float: left;
   height: 80px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 
 .author-name {
