@@ -137,6 +137,10 @@ span.divtext {
   line-height: 180%;
 }
 
+#post-container img {
+  max-width: 100%; 
+}
+
 #tinytext {
   font-size: 0;
 }
