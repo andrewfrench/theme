@@ -55,10 +55,6 @@ html, body {
   text-transform: lowercase;
 }
 
-.nav-item:hover {
-  border-bottom: solid #222 3px;
-}
-
 #logo {
   font-size: 60px;
   margin-top: 6px;
@@ -281,4 +277,37 @@ div#footer a {
 h1, h2, h3, h4, h5, h6 {
   /*font-family: Work Sans;*/
   font-weight: normal;
+}
+
+@media (max-width: 749px) {
+  #navigation-container {
+    text-align: center;
+  }
+
+  #button-container {
+    width: 100%;
+    display: block;
+    background-color: #222;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 4px;
+  }
+
+  #logo {
+    font-size: 6vw;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 1vw;
+    font-size: 4vw;
+  }
+
+  .title {
+    font-size: 3vw;
+  }
+
+  #padding {
+    height: 3vw;
+  }
 }
