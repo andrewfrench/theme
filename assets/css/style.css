@@ -238,7 +238,6 @@ a .multibox-title {
 .author-info {
   float: left;
   height: 80px;
-  /*margin-left: 20px;*/
 }
 
 .author-name {
@@ -271,7 +270,6 @@ div#footer a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /*font-family: Work Sans;*/
   font-weight: normal;
 }
 
