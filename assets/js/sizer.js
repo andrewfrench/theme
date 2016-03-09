@@ -1,9 +1,12 @@
 (function() {
-  sizeBoxes();
-  placeTitles();
+  sizeBoxes(function() {
+    placeTitles(function() {
+      uncover();
+    });
+  });
 })();
 
-function sizeBoxes() {
+function sizeBoxes(next) {
   var realWidth = document.body.clientWidth - 8;
   var boxes = document.getElementsByClassName('box');
 
@@ -34,9 +37,11 @@ function sizeBoxes() {
       }
     }
   }
+
+  next();
 }
 
-function placeTitles() {
+function placeTitles(next) {
   var titles = document.getElementsByClassName("title");
   if(titles) {
     for(var i = 0; i < titles.length; i++) {
@@ -44,6 +49,12 @@ function placeTitles() {
       titles[i].style.bottom = title_height;
     }
   }
+
+  next();
+}
+
+function uncover() {
+  document.getElementById("outer-container").style.visibility = "visible";
 }
 
 window.onresize = function(event) {
