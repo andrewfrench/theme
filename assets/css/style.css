@@ -266,7 +266,10 @@ a .multibox-title {
 
 .author-info {
   float: left;
-  height: 80px;
+  min-height: 80px;
+  max-width: 480px;
+  font-size: 14px;
+  line-height: normal;
 }
 
 .author-name {
@@ -341,5 +344,9 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     float: none;
     width: auto;
+  }
+
+  .author-image {
+    display: none;
   }
 }
