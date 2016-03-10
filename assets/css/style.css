@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
 
 #header {
@@ -156,7 +157,6 @@ span.divtext {
 #post-container {
   max-width: 600px;
   line-height: 180%;
-  font-family: Georgia, serif;
 }
 
 #post-container img {
@@ -299,6 +299,9 @@ div#footer a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  /*font-family: Work Sans, sans-serif;*/
+  font-weight: 200;
+  /*letter-spacing: -1px;*/
 }
 
 @media (max-width: 765px) {
