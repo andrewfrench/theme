@@ -349,4 +349,15 @@ h1, h2, h3, h4, h5, h6 {
   .author-image {
     display: none;
   }
+
+  #post-container {
+    /*text-align: center;*/
+    margin: auto;
+  }
+}
+
+@media (max-width: 1224px) {
+  #post-container {
+    margin-left: 10px;
+  }
 }
