@@ -1,6 +1,6 @@
 html, body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, serif;
 }
 
 #header {
@@ -99,6 +99,7 @@ html, body {
   margin: 40px 5px 46px 5px;
   position: relative;
   z-index: 0;
+  font-family: Work Sans;
 }
 
 .divider:after  {
