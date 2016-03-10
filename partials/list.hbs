@@ -1,9 +1,9 @@
+<div id="list-container">
 {{#each posts}}
-<a href="{{ url }}">
-  <div class="little box leaf">
-    <div class="image cover" style="background-image: url({{ image }});"></div>
-    <div class="title">{{{ title }}}</div>
+  <div class="post-list-elem">
+    <div class="title-a"><a href="{{ url }}">{{ title }}</a></div>
+    <div class="author-a"><a href="{{ author.url }}">{{ author.name }}</a></div>
   </div>
-</a>
 {{/each}}
+</div>
 <div class="clear"></div>
