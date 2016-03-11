@@ -5,12 +5,19 @@
 {{else}}
   <div id="splash" style="background-image: url({{@blog.cover}})"></div>
 {{/if}}
-<div id="splash-overlay-container">
-  <div id="splash-overlay">{{tag.name}}</div>
-</div>
+<!-- {{#if tag.name}}
+  <div id="splash-overlay-container">
+    <div id="splash-overlay">{{tag.name}}</div>
+  </div>
+{{/if}} -->
 <div id="outer-container">
   <div id="inner-container">
     <div id="tinytext">
+      {{#if tag.name}}
+        <div class="divider">
+          <span class="divtext">{{ tag.name }}</span>
+        </div>
+      {{/if}}
       {{> "list" }}
     </div>
   </div>
