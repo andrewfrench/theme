@@ -1,8 +1,8 @@
 (function() {
   sizeBoxes(function() {
     placeTitles(function() {
-      uncover();
-    });
+      uncover()
+    })
   });
 })();
 
@@ -50,7 +50,9 @@ function placeTitles(next) {
     }
   }
 
-  next();
+  if(next) {
+    next();
+  }
 }
 
 function uncover() {
@@ -58,6 +60,9 @@ function uncover() {
 }
 
 window.onresize = function(event) {
-  sizeBoxes();
-  placeTitles();
+  sizeBoxes(function() {
+    placeTitles(function() {
+
+    })
+  });
 }
