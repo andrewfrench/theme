@@ -143,10 +143,18 @@ span.divtext {
   margin-bottom: 10px;
 }
 
+.title-a {
+  text-align: center;
+}
+
 .title-a a {
   font-size: 30px;
   text-decoration: none;
   color: #000;
+}
+
+.author-a {
+  text-align: center;
 }
 
 .author-a a {
@@ -158,6 +166,7 @@ span.divtext {
 #post-container {
   max-width: 600px;
   line-height: 180%;
+  margin: auto;
 }
 
 #post-container img {
@@ -348,16 +357,5 @@ h1, h2, h3, h4, h5, h6 {
 
   .author-image {
     display: none;
-  }
-
-  #post-container {
-    /*text-align: center;*/
-    margin: auto;
-  }
-}
-
-@media (max-width: 1224px) {
-  #post-container {
-    margin-left: 10px;
   }
 }
