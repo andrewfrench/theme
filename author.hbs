@@ -1,5 +1,11 @@
 {{!< default}}
 
+{{#if author.cover}}
+  <div id="splash" style="background-image: url({{ author.cover }});"></div>
+{{else}}
+  <div id="splash" style="background-image: url({{ @blog.cover }});"></div>
+{{/if}}
+
 <div id="splash" style="background-image: url({{@blog.cover}})"></div>
 <div id="outer-container">
   <div id="inner-container">

@@ -170,6 +170,18 @@ span.divtext {
   margin: auto;
 }
 
+#post-container a {
+  color: #444;
+}
+
+#post-container a:hover {
+  color: #777;
+}
+
+#post-container a:visited {
+  color: #444;
+}
+
 #post-container img {
   max-width: 100%;
 }

@@ -50,9 +50,7 @@ function placeTitles(next) {
     }
   }
 
-  if(next) {
-    next();
-  }
+  next();
 }
 
 function uncover() {
@@ -63,6 +61,6 @@ window.onresize = function(event) {
   sizeBoxes(function() {
     placeTitles(function() {
 
-    })
+    });
   });
 }
