@@ -3,7 +3,9 @@
 <div id="splash" style="background-image: url({{@blog.cover}})"></div>
 <div id="outer-container">
   <div id="inner-container">
-    <h1>More from {{ author.name }}</h1>
+    <div class="divider">
+      <span class="divtext">from {{ author.name }}</span>
+    </div>
     <div id="tinytext">
       {{> "list" }}
     </div>
