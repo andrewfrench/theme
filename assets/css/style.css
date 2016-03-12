@@ -58,7 +58,6 @@ html, body {
   display: inline-block;
   margin: 0 0 6px 5px;
   padding: 0 0 0 14px;
-  text-transform: lowercase;
 }
 
 .dropdown-target {
@@ -163,18 +162,10 @@ span.divtext {
   margin-bottom: 10px;
 }
 
-.title-a {
-  text-align: center;
-}
-
 .title-a a {
   font-size: 30px;
   text-decoration: none;
   color: #000;
-}
-
-.author-a {
-  text-align: center;
 }
 
 .author-a a {
