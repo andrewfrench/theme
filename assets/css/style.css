@@ -162,10 +162,18 @@ span.divtext {
   margin-bottom: 10px;
 }
 
+.title-a {
+  max-width: 80%;
+}
+
 .title-a a {
   font-size: 30px;
   text-decoration: none;
   color: #000;
+}
+
+.author-a {
+  max-width: 80%;
 }
 
 .author-a a {
@@ -374,5 +382,13 @@ h1, h2, h3, h4, h5, h6 {
 
   .author-image {
     display: none;
+  }
+
+  .author-a {
+    max-width: 100%;
+  }
+
+  .title-a {
+    max-width: 100%;
   }
 }
