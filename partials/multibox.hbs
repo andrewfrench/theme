@@ -1,13 +1,13 @@
 {{#get "posts" filter="featured:true" limit="1" order="published_at desc" as |featured|}}
   {{#if featued}}
-    <a href="{{ featured.url }}">
+    <a class="no-decoration" href="{{ featured.url }}">
       <div class="big box">
         <div class="image cover" style="background-image: url({{ featured.image }});"></div>
         <div class="title">{{{ featured.title }}}</div>
       </div>
     </a>
   {{else}}
-    <a href="{{ posts.0.url }}">
+    <a class="no-decoration" href="{{ posts.0.url }}">
       <div class="big box">
         <div class="image cover" style="background-image: url({{ posts.0.image }});"></div>
         <div class="title">{{{ posts.0.title }}}</div>
@@ -17,19 +17,19 @@
 {{/get}}
 {{#get "posts" filter="featured:false" limit="3" order="published_at desc" as |unfeatured|}}
   <div id="right-container">
-    <a href="{{ unfeatured.0.url }}">
+    <a class="no-decoration" href="{{ unfeatured.0.url }}">
       <div class="little box">
         <div class="image cover" style="background-image: url({{ unfeatured.0.image }});"></div>
         <div class="title">{{{ unfeatured.0.title }}}</div>
       </div>
     </a>
-    <a href="{{ unfeatured.1.url }}">
+    <a class="no-decoration" href="{{ unfeatured.1.url }}">
       <div class="little box">
         <div class="image cover" style="background-image: url({{ unfeatured.1.image }});"></div>
         <div class="title">{{{ unfeatured.1.title }}}</div>
       </div>
     </a>
-    <a href="{{ unfeatured.2.url }}">
+    <a class="no-decoration" href="{{ unfeatured.2.url }}">
       <div class="medium box">
         <div class="image cover" style="background-image: url({{ unfeatured.2.image }});"></div>
         <div class="title">{{{ unfeatured.2.title }}}</div>
