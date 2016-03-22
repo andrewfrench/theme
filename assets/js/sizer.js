@@ -46,7 +46,7 @@ function sizeBoxes(next) {
 
     if(boxes) {
       for(var i = 0; i < boxes.length; i++) {
-        boxes[i].style.width = realWidth + "px";
+        boxes[i].style.width = "auto";
         boxes[i].style.height =  "200px";
         }
       }
