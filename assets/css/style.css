@@ -338,6 +338,15 @@ h1, h2, h3, h4, h5, h6 {
   /*letter-spacing: -1px;*/
 }
 
+div.call-to-action {
+  font-size: 24px;
+  text-align: center;
+}
+
+div.call-to-action a {
+  color: #444;
+}
+
 @media (max-width: 550px) {
   a.no-decoration {
     text-decoration: none !important;
