@@ -70,6 +70,8 @@ Map.prototype.getLocations = function() {
 
     for(var j = 0; j < postData.length; j++) {
       if(postData[j].indexOf("loc:") > -1) {
+        console.log(postData[j]);
+
         var locArr = postData[j].split(":")[1].split("|");
 
         console.log(locArr);
