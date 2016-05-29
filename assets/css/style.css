@@ -438,4 +438,5 @@ div.call-to-action a {
 
 .infowindow a {
   color: black;
+  text-decoration: none;
 }

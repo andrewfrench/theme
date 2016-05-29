@@ -68,20 +68,12 @@ Map.prototype.getLocations = function() {
     var currentPost = posts[i];
     var postData = currentPost.dataset.postTags.split(" ");
 
-    console.log(postData);
-
     for(var j = 0; j < postData.length; j++) {
       if(postData[j].indexOf("loc:") > -1) {
-        console.log(postData[j]);
-
         var locArr = postData[j].split(":")[1].split("|");
-
-        console.log(locArr);
 
         var lat = parseFloat(locArr[0]);
         var lng = parseFloat(locArr[1]);
-
-        console.log(lat, lng);
 
         var latlng = new google.maps.LatLng(lat, lng);
         this.bounds.extend(latlng);
