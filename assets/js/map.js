@@ -73,6 +73,9 @@ Map.prototype.getLocations = function() {
         var locArr = postData[j].split(":")[1].split("|");
         var lat = parseFloat(locArr[0]);
         var lng = parseFloat(locArr[1]);
+
+        console.log(lat, lng);
+        
         var latlng = new google.maps.LatLng(lat, lng);
         this.bounds.extend(latlng);
         var marker = new google.maps.Marker({
