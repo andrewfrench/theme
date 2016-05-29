@@ -1,6 +1,7 @@
+<div id="map-container"></div>
 <div id="list-container" data-tag="{{tag.name}}">
 {{#each posts}}
-  <div class="post-list-elem" data-post-tags="{{tags separator=' ' autolink='false'}}" data-post-url="{{ url }}">
+  <div class="post-list-elem" data-post-tags="{{tags separator=' ' autolink='false'}}" data-post-url="{{ url }}" data-post-title="{{ title }}">
     <div class="title-a"><a href="{{ url }}">{{ title }}</a></div>
     <div class="author-a">{{ author }}</div>
   </div>

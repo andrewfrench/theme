@@ -422,3 +422,20 @@ div.call-to-action a {
     font-size: 30px;
   }
 }
+
+/* Make the map look better */
+.gmnoprint, .gm-style-cc {
+  visibility: hidden;
+}
+
+.gm-style {
+  background-color: #eee;
+}
+
+.infowindow {
+  font-size: 18px;
+}
+
+.infowindow a {
+  color: black;
+}
