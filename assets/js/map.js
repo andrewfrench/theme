@@ -68,6 +68,8 @@ Map.prototype.getLocations = function() {
     var currentPost = posts[i];
     var postData = currentPost.dataset.postTags.split(" ");
 
+    console.log(postData);
+
     for(var j = 0; j < postData.length; j++) {
       if(postData[j].indexOf("loc:") > -1) {
         console.log(postData[j]);
