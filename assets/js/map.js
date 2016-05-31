@@ -106,10 +106,17 @@ Map.prototype.attachInfoWindow = function(marker, title, url) {
 Map.prototype.createMap = function() {
   var mapContainer = document.getElementById("map-container");
 
-  mapContainer.style.height = "600px";
+  var headerHeight = document.getElementById("header").clientHeight;
+
+  document.body.style.overflow = "hidden";
+  mapContainer.style.position = "absolute";
+  mapContainer.style.width    = "100%";
+  mapContainer.style.left     = 0;
+  mapContainer.style.top      = headerHeight + "px";
+  mapContainer.style.height   = (window.innerHeight - headerHeight) + "px";
 
   this.googleMap = new google.maps.Map(mapContainer, {
-    zoom: 4,
+    minZoom: 4,
     center: {lat: 61.1, lng: -149.9},
     disableDefaultUI: true
   });
