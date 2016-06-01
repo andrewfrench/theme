@@ -35,6 +35,9 @@ function sizeBoxes(next) {
         } else if(classes.indexOf('little') != -1) {
           boxes[i].style.width = shortDimension + "px";
           boxes[i].style.height = shortDimension + "px";
+        } else if(classes.indexOf('huge') != -1) {
+          boxes[i].style.width = realWidth + "px";
+          boxes[i].style.height = (shortDimension * 1.5) + "px";
         }
       }
     }
