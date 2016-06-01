@@ -53,6 +53,7 @@ Map.prototype.isGeoPage = function() {
 Map.prototype.getLocations = function() {
   var posts = document.getElementsByClassName("post-list-elem");
 
+  this.infoWindows = new Array();
   this.markers = new Array();
   this.bounds = new google.maps.LatLngBounds();
 
@@ -98,9 +99,16 @@ Map.prototype.attachInfoWindow = function(marker, title, url) {
     content: contentString
   });
 
+  var mapObj = this;
   marker.addListener("click", function() {
+    for(var i = 0; i < mapObj.infoWindows.length; i++) {
+      mapObj.infoWindows[i].close();
+    }
+
     infoWindow.open(marker.getMap(), marker);
   });
+
+  this.infoWindows.push(infoWindow);
 }
 
 Map.prototype.createMap = function() {
