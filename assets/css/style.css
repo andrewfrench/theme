@@ -157,16 +157,22 @@ span.divtext {
 
 .post-list-elem {
   display: inline-block;
-  width: 50%;
-  float: left;
-  margin-bottom: 10px;
+  width: auto;
+  padding: 8px;
+  margin: 8px;
+}
+
+.post-list-elem {
+  padding: 6px;
+  transition: background-color 0.4s ease;
+}
+
+.post-list-elem:hover {
+  background-color: #eee !important;
 }
 
 .title-a {
   max-width: 90%;
-}
-
-.title-a a {
   font-size: 30px;
   text-decoration: none;
   color: #000;
@@ -174,12 +180,9 @@ span.divtext {
 
 .author-a {
   max-width: 90%;
-}
-
-.author-a a {
   font-size: 16px;
   text-decoration: none;
-  color: #666;
+  color: #000;
 }
 
 #post-container {
@@ -347,11 +350,11 @@ div.call-to-action a {
   color: #444;
 }
 
-@media (max-width: 550px) {
-  a.no-decoration {
-    text-decoration: none !important;
-  }
+a.no-decoration {
+  text-decoration: none !important;
+}
 
+@media (max-width: 550px) {
   #navigation-container {
     text-align: center;
   }

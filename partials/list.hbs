@@ -1,10 +1,12 @@
 <div id="map-container"></div>
 <div id="list-container" data-tag="{{tag.name}}">
 {{#each posts}}
-  <div class="post-list-elem" data-post-tags="{{tags separator=' ' autolink='false'}}" data-post-url="{{ url }}" data-post-title="{{ title }}">
-    <div class="title-a"><a href="{{ url }}">{{ title }}</a></div>
-    <div class="author-a">{{ author }}</div>
-  </div>
+  <a href="{{ url }}" class="no-decoration">
+    <div class="post-list-elem multigray" data-post-tags="{{tags separator=' ' autolink='false'}}" data-post-url="{{ url }}" data-post-title="{{ title }}">
+      <div class="title-a">{{ title }}</div>
+      <div class="author-a">{{ author.name }}</div>
+    </div>
+  </a>
 {{else}}
   <div class="call-to-action">Looks like this collection's still empty.  Want to get involved?  <a href="mailto:contact@knik.co">Email us</a>.</div>
 {{/each}}
