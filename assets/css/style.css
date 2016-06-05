@@ -158,9 +158,9 @@ span.divtext {
 .post-list-elem {
   display: inline-block;
   width: auto;
-  max-width: 400px;
+  /*max-width: 400px;*/
   float: left;
-  height: 88px;
+  /*min-height: 88px;*/
   padding: 8px;
   margin: 8px;
 }
@@ -175,14 +175,14 @@ span.divtext {
 }
 
 .title-a {
-  max-width: 90%;
+  /*max-width: 90%;*/
   font-size: 30px;
   text-decoration: none;
   color: #000;
 }
 
 .author-a {
-  max-width: 90%;
+  /*max-width: 90%;*/
   font-size: 16px;
   text-decoration: none;
   color: #000;
