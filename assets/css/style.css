@@ -158,6 +158,9 @@ span.divtext {
 .post-list-elem {
   display: inline-block;
   width: auto;
+  max-width: 300px;
+  float: left;
+  height: 88px;
   padding: 8px;
   margin: 8px;
 }
