@@ -249,6 +249,7 @@ a .multibox-title {
   float: left;
   overflow: hidden;
   background-size: cover;
+  background-position: center;
 }
 
 .image {
