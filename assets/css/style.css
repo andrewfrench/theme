@@ -273,18 +273,19 @@ a .multibox-title {
 
 .post-author {
   position: absolute;
-  bottom: 20px;
+  bottom: 18px;
   right: 20px;
   z-index: 1;
-  height: 100px;
+  height: 70px;
 }
 
 .post-author-image {
-  width: 100px;
+  width: 70px;
   height: inherit;
   background-position: center;
   background-size: cover;
   float: right;
+  border-radius: 50%;
 }
 
 .post-author-name {
@@ -294,13 +295,9 @@ a .multibox-title {
   color: white;
   text-decoration: none;
   padding: 6px;
-  display: none;
-  top: 30px;
+  top: 16px;
+  right: 10px;
   float: right;
-}
-
-.box:hover .post-author-name {
-  display: inline-block;;
 }
 
 .recent-post {
