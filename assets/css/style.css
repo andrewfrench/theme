@@ -48,13 +48,13 @@ html, body {
 
 #button-container {
   float: right;
-  margin: 26px 8px 0 0;
+  margin: 24px 8px 0 0;
   display: inline-block;
   text-align: right;
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 24px;
   display: inline-block;
   margin: 0 0 6px 5px;
   padding: 0 0 0 14px;
@@ -248,6 +248,7 @@ a .multibox-title {
   margin: 4px;
   float: left;
   overflow: hidden;
+  background-size: cover;
 }
 
 .image {
@@ -255,13 +256,24 @@ a .multibox-title {
   height: 100%;
 }
 
-.title {
+/*.title {
   background-color: rgba(0,0,0,0.6);
   overflow: hidden;
   position: relative;
   padding: 8px 10px 8px 10px;
   font-size: 20px;
   color: white;
+}*/
+
+.newtitle {
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  padding: 6px;
+  font-size: 26px;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  font-weight: bold;
 }
 
 .recent-post {

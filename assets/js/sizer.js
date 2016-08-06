@@ -1,8 +1,6 @@
 (function() {
   sizeBoxes(function() {
-    placeTitles(function() {
-      uncover()
-    })
+    uncover()
   });
 })();
 
@@ -58,26 +56,11 @@ function sizeBoxes(next) {
   next();
 }
 
-function placeTitles(next) {
-  var titles = document.getElementsByClassName("title");
-  if(titles) {
-    for(var i = 0; i < titles.length; i++) {
-      var title_height = titles[i].offsetHeight + "px";
-      titles[i].style.bottom = title_height;
-    }
-  }
-
-  next();
-}
 
 function uncover() {
   document.getElementById("outer-container").style.visibility = "visible";
 }
 
 window.onresize = function(event) {
-  sizeBoxes(function() {
-    placeTitles(function() {
-
-    });
-  });
+  sizeBoxes();
 }
