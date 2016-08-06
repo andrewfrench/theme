@@ -51,7 +51,7 @@ Map.prototype.isGeoPage = function() {
 }
 
 Map.prototype.getLocations = function() {
-  var posts = document.getElementsByClassName("post-list-elem");
+  var posts = document.getElementsByClassName("box");
 
   this.infoWindows = new Array();
   this.markers = new Array();
