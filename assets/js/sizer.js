@@ -62,5 +62,5 @@ function uncover() {
 }
 
 window.onresize = function(event) {
-  sizeBoxes();
+  sizeBoxes(function() {});
 }

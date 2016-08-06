@@ -1,44 +1,32 @@
-{{#get "posts" filter="featured:true" limit="1" order="published_at desc" as |featured|}}
+{{#get "posts" include="author" filter="featured:true" limit="1" order="published_at desc" as |featured|}}
   {{#if featued}}
     <a class="no-decoration" href="{{ featured.url }}">
       <div class="big box" style="background-image: url({{ featured.image }});">
-        {{!-- <div class="image cover"></div> --}}
         <div class="newtitle">{{{ featured.title }}}</div>
+        <div class="post-author" style="background-image: url({{ featured.author.image }});"></div>
       </div>
     </a>
   {{else}}
     <a class="no-decoration" href="{{ posts.0.url }}">
       <div class="big box multigray" style="background-image: url({{ posts.0.image }});">
-        {{!-- <div class="image cover"></div> --}}
         <div class="newtitle">{{{ posts.0.title }}}</div>
+        <div class="post-author" style="background-image: url({{ posts.0.author.image }});"></div>
       </div>
     </a>
   {{/if}}
 {{/get}}
-{{#get "posts" filter="featured:false" limit="3" order="published_at desc" as |unfeatured|}}
+{{#get "posts" include="author" filter="featured:false" limit="3" order="published_at desc" as |unfeatured|}}
   <div id="right-container">
-    {{!-- <a class="no-decoration" href="{{ unfeatured.0.url }}">
-      <div class="little box multigray">
-        <div class="image cover" style="background-image: url({{ unfeatured.0.image }});"></div>
-        <div class="title">{{{ unfeatured.0.title }}}</div>
-      </div>
-    </a>
-    <a class="no-decoration" href="{{ unfeatured.1.url }}">
-      <div class="little box multigray">
-        <div class="image cover" style="background-image: url({{ unfeatured.1.image }});"></div>
-        <div class="title">{{{ unfeatured.1.title }}}</div>
-      </div>
-    </a> --}}
     <a class="no-decoration" href="{{ unfeatured.0.url }}">
       <div class="medium box multigray" style="background-image: url({{ unfeatured.0.image }});">
-        {{!-- <div class="image cover"></div> --}}
         <div class="newtitle">{{{ unfeatured.0.title }}}</div>
+        <div class="post-author" style="background-image: url({{ unfeatured.0.author.image }});"></div>
       </div>
     </a>
     <a class="no-decoration" href="{{ unfeatured.1.url }}">
       <div class="medium box multigray" style="background-image: url({{ unfeatured.1.image }});">
-        {{!-- <div class="image cover"></div> --}}
         <div class="newtitle">{{{ unfeatured.1.title }}}</div>
+        <div class="post-author" style="background-image: url({{ unfeatured.1.author.image }});"></div>
       </div>
     </a>
   </div>
