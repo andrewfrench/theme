@@ -1,14 +1,20 @@
 <div id="map-container"></div>
 <div id="list-container" data-tag="{{tag.name}}">
-{{#each posts}}
-  <a href="{{ url }}" class="no-decoration">
+{{#foreach posts from="4"}}
+  <a class="no-decoration" href="{{ url }}">
+    <div class="medium box multigray">
+      <div class="image cover" style="background-image: url({{ image }});"></div>
+      <div class="title">{{{ title }}}</div>
+    </div>
+  </a>
+  {{!-- <a href="{{ url }}" class="no-decoration">
     <div class="post-list-elem multigray" data-post-tags="{{tags separator=' ' autolink='false'}}" data-post-url="{{ url }}" data-post-title="{{ title }}">
       <div class="title-a">{{ title }}</div>
       <div class="author-a">{{ author.name }}</div>
     </div>
-  </a>
+  </a> --}}
 {{else}}
   <div class="call-to-action">Looks like this collection's still empty.  Want to get involved?  <a href="mailto:contact@knik.co">Email us</a>.</div>
-{{/each}}
+{{/foreach}}
 </div>
 <div class="clear"></div>
