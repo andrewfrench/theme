@@ -258,15 +258,6 @@ a .multibox-title {
   height: 100%;
 }
 
-/*.title {
-  background-color: rgba(0,0,0,0.6);
-  overflow: hidden;
-  position: relative;
-  padding: 8px 10px 8px 10px;
-  font-size: 20px;
-  color: white;
-}*/
-
 .newtitle {
   background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
@@ -281,15 +272,35 @@ a .multibox-title {
 }
 
 .post-author {
-  width: 80px;
-  height: 80px;
-  background-position: center;
-  background-size: cover;
-  float: right;
   position: absolute;
   bottom: 20px;
   right: 20px;
   z-index: 1;
+  height: 100px;
+}
+
+.post-author-image {
+  width: 100px;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+  float: right;
+}
+
+.post-author-name {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+  display: none;
+  top: 30px;
+  float: right;
+}
+
+.box:hover .post-author-name {
+  display: inline-block;;
 }
 
 .recent-post {
