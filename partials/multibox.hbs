@@ -2,15 +2,15 @@
   {{#if featued}}
     <a class="no-decoration" href="{{ featured.url }}">
       <div class="big box" style="background-image: url({{ featured.image }});">
-        <div class="newtitle">{{{ featured.title }}}</div>
         <div class="post-author" style="background-image: url({{ featured.author.image }});"></div>
+        <div class="newtitle">{{{ featured.title }}}</div>
       </div>
     </a>
   {{else}}
     <a class="no-decoration" href="{{ posts.0.url }}">
       <div class="big box multigray" style="background-image: url({{ posts.0.image }});">
-        <div class="newtitle">{{{ posts.0.title }}}</div>
         <div class="post-author" style="background-image: url({{ posts.0.author.image }});"></div>
+        <div class="newtitle">{{{ posts.0.title }}}</div>
       </div>
     </a>
   {{/if}}
@@ -19,14 +19,14 @@
   <div id="right-container">
     <a class="no-decoration" href="{{ unfeatured.0.url }}">
       <div class="medium box multigray" style="background-image: url({{ unfeatured.0.image }});">
-        <div class="newtitle">{{{ unfeatured.0.title }}}</div>
         <div class="post-author" style="background-image: url({{ unfeatured.0.author.image }});"></div>
+        <div class="newtitle">{{{ unfeatured.0.title }}}</div>
       </div>
     </a>
     <a class="no-decoration" href="{{ unfeatured.1.url }}">
       <div class="medium box multigray" style="background-image: url({{ unfeatured.1.image }});">
-        <div class="newtitle">{{{ unfeatured.1.title }}}</div>
         <div class="post-author" style="background-image: url({{ unfeatured.1.author.image }});"></div>
+        <div class="newtitle">{{{ unfeatured.1.title }}}</div>
       </div>
     </a>
   </div>

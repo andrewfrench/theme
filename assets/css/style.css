@@ -276,6 +276,8 @@ a .multibox-title {
   display: inline-block;
   margin: 20px;
   font-weight: bold;
+  z-index: 2;
+  position: relative;
 }
 
 .post-author {
@@ -287,6 +289,7 @@ a .multibox-title {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  z-index: 1;
 }
 
 .recent-post {

@@ -4,8 +4,8 @@
   {{#foreach posts }}
     <a class="no-decoration" href="{{ url }}">
       <div class="medium box multigray" style="background-image: url({{ image }});">
-        <div class="newtitle">{{{ title }}}</div>
         <div class="post-author" style="background-image: url({{ author.image }});"></div>
+        <div class="newtitle">{{{ title }}}</div>
       </div>
     </a>
   {{else}}
@@ -15,8 +15,8 @@
   {{#foreach posts from="3" to="10"}}
   <a class="no-decoration" href="{{ url }}">
     <div class="medium box multigray" style="background-image: url({{ image }});">
-      <div class="newtitle">{{{ title }}}</div>
       <div class="post-author" style="background-image: url({{ author.image }});"></div>
+      <div class="newtitle">{{{ title }}}</div>
     </div>
   </a>
   {{/foreach}}
