@@ -10,13 +10,14 @@
   {{else}}
     <div class="call-to-action">Looks like this collection's still empty.  Want to get involved?  <a href="mailto:contact@knik.co">Email us</a>.</div>
   {{/foreach}}
-{{/is}}
-{{#foreach posts from="3"}}
+{{else}}
+  {{#foreach posts from="3"}}
   <a class="no-decoration" href="{{ url }}">
     <div class="medium box multigray" style="background-image: url({{ image }});">
       <div class="newtitle">{{{ title }}}</div>
     </div>
   </a>
-{{/foreach}}
+  {{/foreach}}
+{{/is}}
 </div>
 <div class="clear"></div>
