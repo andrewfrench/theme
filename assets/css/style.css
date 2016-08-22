@@ -432,6 +432,16 @@ a.no-decoration {
 }
 
 @media (max-width: 550px) {
+  html {
+    overflow: auto;
+    height: auto;;
+  }
+
+  body {
+    overflow: auto;
+    height: auto;
+  }
+
   #navigation-container {
     text-align: center;
   }
