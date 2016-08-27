@@ -89,10 +89,14 @@ html, body {
     display: block;
 }
 
-.social img {
-  margin-top: 12px;
-  width: 40px;
-  height: 40px;
+.right-side-dropdown {
+  left: auto;
+  right: -16px;
+  text-align: right;
+}
+
+.dropdown-item {
+  padding: 4px 0 4px 0;
 }
 
 #logo {
