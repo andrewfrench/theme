@@ -388,15 +388,39 @@ a .multibox-title {
 
 .author-name {
   font-size: 24px;
-}
-
-.author-bio {
-  padding-bottom: 2px;
+  margin-top: 32px;
 }
 
 .author-more-by {
   font-size: 14px;
   color: #777;
+}
+
+#author-left {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+#author-right {
+  width: 70%;
+  display: inline-block;
+  float: left;
+  max-width: 500px;
+}
+
+#author-right h1 {
+  margin-left: 10px;
+}
+
+.author-bio {
+  margin-left: 10px;
+}
+
+.author-page-image {
+  max-width: 100%;
+  height: auto;
 }
 
 div#footer {
@@ -435,7 +459,7 @@ a.no-decoration {
   text-decoration: none !important;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 605px) {
   html {
     overflow: auto;
     height: auto;;
@@ -504,10 +528,6 @@ a.no-decoration {
     width: auto;
   }
 
-  .author-image {
-    display: none;
-  }
-
   .author-a {
     max-width: 100%;
   }
@@ -518,6 +538,23 @@ a.no-decoration {
 
   #footer a{
     font-size: 24px;
+  }
+
+  #author-left {
+    width: 100%;
+  }
+
+  #author-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #author-right h1 {
+    margin: 0;
+  }
+
+  .author-bio {
+    margin: 0;
   }
 }
 

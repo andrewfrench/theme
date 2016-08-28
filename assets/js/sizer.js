@@ -5,7 +5,7 @@
 })();
 
 function sizeBoxes(next) {
-  if(document.body.clientWidth > 550) {
+  if(document.body.clientWidth > 605) {
     var realWidth = document.body.clientWidth - 8;
     var boxes = document.getElementsByClassName('box');
 

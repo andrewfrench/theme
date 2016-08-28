@@ -9,6 +9,14 @@
 <div id="splash" style="background-image: url({{@blog.cover}})"></div>
 <div id="outer-container">
   <div id="inner-container">
+    <div id="author-left">
+      <img class="author-page-image" src="{{ author.image }}" />
+    </div>
+    <div id="author-right">
+      <h1>{{ author.name }}</h1>
+      <div class="author-bio">{{ author.bio }}</div>
+    </div>
+    <div class="clear"></div>
     <div class="divider">
       <span class="divtext">from {{ author.name }}</span>
     </div>
