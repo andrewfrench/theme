@@ -397,17 +397,16 @@ a .multibox-title {
 }
 
 #author-left {
-  width: 30%;
+  width: 200px;
   display: inline-block;
   float: left;
   text-align: center;
 }
 
 #author-right {
-  width: 70%;
+  width: 395px;
   display: inline-block;
   float: left;
-  max-width: 500px;
 }
 
 #author-right h1 {
@@ -419,8 +418,12 @@ a .multibox-title {
 }
 
 .author-page-image {
-  max-width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
 }
 
 div#footer {
