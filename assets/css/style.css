@@ -32,23 +32,20 @@ html, body {
 
 #splash-overlay-container {
   position: fixed;
-  top: 230px;
-  width: 100%;
-  text-align: center;
+  height: 0;
+  top: 436px;
+  right: 6px;
   z-index: -1;
 }
 
 #splash-overlay {
   display: inline-block;
-  font-family: Work Sans;
-  font-size: 60px;
+  font-size: 18px;
   font-weight: 200;
   color: white;
-  padding: 10px 20px 10px 20px;
-  border: solid white 2px;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
-  text-transform: lowercase;
 }
 
 #navigation-container {
@@ -196,9 +193,7 @@ span.divtext {
 .post-list-elem {
   display: inline-block;
   width: auto;
-  /*max-width: 400px;*/
   float: left;
-  /*min-height: 88px;*/
   padding: 8px;
   margin: 8px;
 }
@@ -500,10 +495,6 @@ a.no-decoration {
     font-size: 5vw;
   }
 
-  #splash-overlay {
-    font-size: 8vw;
-  }
-
   #right-container {
     display: block;
     width: auto;
@@ -558,6 +549,10 @@ a.no-decoration {
 
   .author-bio {
     margin: 0;
+  }
+
+  #splash-overlay-container {
+    top: 376px;
   }
 }
 

@@ -1,11 +1,6 @@
 {{!< default }}
 
-{{#if post.image}}
-  <div id="splash" style="background-image: url({{ post.image }});"></div>
-{{else}}
-  <div id="splash" style="background-image: url({{ @blog.cover }});"></div>
-{{/if}}
-
+{{> "splash" }}
 {{#post}}
 <div id="outer-container">
   <div id="inner-container">
