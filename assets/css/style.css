@@ -94,6 +94,11 @@ html, body {
 
 .dropdown-item {
   padding: 4px 0 4px 0;
+  border-left: solid #222 2px;
+}
+
+.dropdown-item:hover {
+  border-left: solid #fd7923 2px;
 }
 
 #logo {

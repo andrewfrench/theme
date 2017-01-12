@@ -6,22 +6,7 @@
   <div id="inner-container">
     <div id="post-container">
       <h1>{{ title }}</h1>
-
       {{ content }}
-
-      {{#author}}
-      <div class="author">
-        {{#if image }}
-          <div class="author-image" style="background-image: url({{ image }});"></div>
-        {{/if}}
-        <div class="author-info">
-          <div class="author-name">
-            <a href="{{ url }}">{{ name }}</a>
-          </div>
-        </div>
-      </div>
-        <div class="clear"></div>
-      {{/author}}
     </div>
   </div>
 </div>

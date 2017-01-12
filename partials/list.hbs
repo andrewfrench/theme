@@ -4,24 +4,16 @@
   {{#foreach posts }}
     <a class="no-decoration" href="{{ url }}">
       <div class="medium box multigray" data-post-tags="{{ tags separator=' ' autolink='false' }}" data-post-title="{{ title }}" data-post-url="{{ url }}" style="background-image: url({{ image }});">
-        <div class="post-author">
-          <div class="post-author-image" style="background-image: url({{ author.image }});"></div>
-          <div class="post-author-name">{{{ author.name }}}</div>
-        </div>
         <div class="newtitle">{{{ title }}}</div>
       </div>
     </a>
   {{else}}
-    <div class="call-to-action">Looks like there's nothing here yet.  Want to get involved?  <a href="mailto:contact@knik.co">Email us</a>.</div>
+    <div class="call-to-action">Looks like there's nothing here yet.</div>
   {{/foreach}}
 {{else}}
   {{#foreach posts from="4" to="12"}}
     <a class="no-decoration" href="{{ url }}">
       <div class="medium box multigray" style="background-image: url({{ image }});">
-        <div class="post-author">
-          <div class="post-author-image" style="background-image: url({{ author.image }});"></div>
-          <div class="post-author-name">{{{ author.name }}}</div>
-        </div>
         <div class="newtitle">{{{ title }}}</div>
       </div>
     </a>
