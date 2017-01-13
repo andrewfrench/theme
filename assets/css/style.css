@@ -229,6 +229,7 @@ span.divtext {
 #post-container {
   max-width: 900px;
   line-height: 180%;
+  margin-left: 12px;
 }
 
 #post-container a {
@@ -446,10 +447,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Work Sans, sans-serif;
   letter-spacing: -1px;
   font-weight: 800;
+  margin-bottom: 4px;
 }
 
 h1 {
   font-size: 50px
+}
+
+p {
+  margin-top: 4px;
 }
 
 div.call-to-action {
