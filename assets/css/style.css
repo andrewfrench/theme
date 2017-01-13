@@ -443,10 +443,14 @@ div#footer a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  /*font-family: Work Sans, sans-serif;*/
-  font-weight: 200;
-  /*letter-spacing: -1px;*/
+  font-weight: bold;
+  font-family: Work Sans, sans-serif;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 50px
 }
 
 div.call-to-action {
